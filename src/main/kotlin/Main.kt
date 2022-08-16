@@ -37,10 +37,8 @@ fun main(args: Array<String>) {
 
 
     // let - наиболее часто используется для избегания проверок на null, но так же используется как замена для run.
-    // в отличии от run, текущий обьект представлен перменной it.
+    // в отличии от run, текущий обьект представлен переменной it.
     val fruitBasket = mutableListOf<Apple>()
-
-
     // ниже приведен пример использования данной функции -> совмещенное использование safecall-оператора и let.
     // код внутри лямбды выполнен не будет, т.к. в apple = null.
     var apple : Apple? = null
@@ -48,7 +46,6 @@ fun main(args: Array<String>) {
         println("adding a apple!")
         fruitBasket.add(it)
     }
-
     // этот код будет выполнен, так как apple != null
     apple = Apple()
     apple?.let {
