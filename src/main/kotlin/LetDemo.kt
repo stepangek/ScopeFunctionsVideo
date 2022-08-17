@@ -9,10 +9,7 @@ class LetDemo {
         myGrandpa.installVirusOn(it)
     }
 
-
-
-
-
+    // 2 пример
     fun nullableLetUsage(){
         // let часто используется для избегания проверок на null
 
