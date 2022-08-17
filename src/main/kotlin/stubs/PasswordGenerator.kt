@@ -1,3 +1,5 @@
+package stubs
+
 import java.math.BigInteger
 import java.security.MessageDigest
 import kotlin.random.Random
