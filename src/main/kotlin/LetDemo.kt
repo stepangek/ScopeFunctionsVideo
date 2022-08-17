@@ -10,6 +10,16 @@ class LetDemo {
     }
 
     // 2 пример
+    fun exampleTwo() {
+        val numbers = mutableListOf("one", "two", "three", "four", "five")
+        numbers.map { it.length }.filter { it > 3 }.let {
+            println(it)
+            // при необходимости можно вызвать больше функций
+        }
+    }
+
+
+
     fun nullableLetUsage(){
         // let часто используется для избегания проверок на null
 
