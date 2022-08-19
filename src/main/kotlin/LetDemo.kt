@@ -1,5 +1,6 @@
 import MyComputer.Companion.myComputer
 import MyGrandpa.Companion.myGrandpa
+import stubs.processString
 
 class LetDemo {
     // let - аналог run, но внутри вместо this ссылка it
@@ -10,11 +11,12 @@ class LetDemo {
     }
 
     // 2 пример
-    fun exampleTwo() {
-        val numbers = mutableListOf("one", "two", "three", "four", "five")
-        numbers.map { it.length }.filter { it > 3 }.let {
-            println(it)
-            // при необходимости можно вызвать больше функций
+    fun exampleTwo(){
+        val str: String = "Hello"
+        val length = str.let {
+            println("Вызов функции let() для $it")
+            processString(it)      // OK: 'it' не может быть null внутри конструкции '?.let { }'
+            it.length
         }
     }
 
