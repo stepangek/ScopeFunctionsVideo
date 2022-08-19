@@ -1,23 +1,25 @@
 import MyComputer.Companion.myComputer
 
 class WithDemo {
-    // with - прменяется аналогично с apply, однако обьект над которым совершается действие,
-    // передается в качестве параметра и вам не нужен контекстный обьект обратно в качестве
+    // with - совершает над обьектом, который
+    // передается в качестве параметра определенные действия и возвращает результат лямбды(как let
     // возвращаемого значения
 
     //1 пример
-    fun eatApple(){
-        val apple = Apple()
-        with(apple) {
-            eat()
-        }
-    }
-
-    //2 пример
     fun computerInstall() {
-        with(myComputer) {
+        val resultOfInstall = with(myComputer) {
             //вы компьютер, вы устанавливаете программы на себя
             installFancyApps()
         }
     }
+
+    //2 пример
+    fun eatApple(){
+        val apple = Apple()
+        val eatedApple = with(apple) {
+            eat()
+        }
+    }
+
+
 }

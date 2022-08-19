@@ -15,10 +15,12 @@ class LetDemo {
         val str: String = "Hello"
         val length = str.let {
             println("Вызов функции let() для $it")
-            processString(it)      // OK: 'it' не может быть null внутри конструкции '?.let { }'
+            processString(it)
             it.length
         }
     }
+
+
 
 
 

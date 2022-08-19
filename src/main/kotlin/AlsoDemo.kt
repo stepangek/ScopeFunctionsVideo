@@ -2,8 +2,7 @@ import MyComputer.Companion.myComputer
 import MyGrandpa.Companion.myGrandpa
 
 class AlsoDemo {
-    // also - используется когда нужно совершить над каким либо объектом еще одно или несколько действий,
-    // и вернуть исходный объект и возможно совершить еще какие-нибудь действия
+    // also - используется когда нужно совершить над каким либо объектом еще одно или несколько действий(side-effect!)
 
     //1 пример
     val anotherCrashedComputer = myComputer.also {

@@ -21,6 +21,4 @@ class ApplyDemo {
     }
     val passwordWithApply = generator.generate()
 
-
-
 }
