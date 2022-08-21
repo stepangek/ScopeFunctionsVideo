@@ -1,12 +1,13 @@
+package stubs
+
 import java.math.BigInteger
 import java.security.MessageDigest
 import kotlin.random.Random
 
 const val STRING_LENGTH = 10
-const val ALPHANUMERIC_REGEX = "[a-zA-Z0-9]+"
 
 
-class PasswordGenerator(){
+class PasswordGenerator{
     var seed: String? = null
     var hash: String? = null
     var hashRepetitions: Int? = null
