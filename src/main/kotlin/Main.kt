@@ -1,3 +1,5 @@
+import stubs.MyObj
+
 //Все эти функции используются для переключения контекста между текущей функцией / переменной
 //Они используются для хранения связанных инструкций вместе в одном месте(наиболее часто для инициализации)
 fun main(args: Array<String>) {
@@ -22,5 +24,10 @@ fun main(args: Array<String>) {
 
     println(eatedApple2)
 
+
+    MyObj(3, 5)
+        .let { it.x + it.y }
+        .let { it.toDouble() * 8 }
+        .also { println(it) }
 
 }
